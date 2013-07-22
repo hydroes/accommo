@@ -1,0 +1,200 @@
+@charset "utf-8";
+/* CSS Document */
+#map_canvas {
+	height:300px;
+	width:300px;
+}
+#content
+{
+	min-height:500px;
+}
+
+#uploaded_images div.listing_preview_container
+{
+	float:left;
+	width:150;
+	height:150;
+	margin:10px 0px 10px 10px;
+	text-align:center;
+}
+#uploaded_images div.listing_preview_container.empty
+{
+	width:150px;
+	height:150px;
+	border:1px dashed #B0C8E4;
+}
+#uploaded_images div.listing_preview_container.loading
+{
+	background-image:url(../images/layout/ajax-loader-spiner.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#uploaded_images a.delete_image_btn
+{
+	background-image:url(../images/layout/icon_sprite.png);
+	width:16px;
+	height:16px;
+	position:relative;
+	background-position:-32px 48px;
+	top:8px;
+	left:140px;
+	display:none;
+	text-decoration:none;
+}
+#uploaded_images a.delete_image_btn.show
+{
+	display:block;
+}
+#uploaded_images a.delete_image_btn.hide
+{
+	display:none;
+}
+#uploaded_images
+{
+	width:500px;
+	text-align:center;
+	margin:auto;
+}
+
+/**
+* Carousel styles start
+*/
+.jcarousel-skin-tango .jcarousel-container {
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl {
+	direction: rtl;
+}
+
+.jcarousel-skin-tango .jcarousel-container-horizontal {
+    /*width: 750px;
+    padding: 20px 40px; */
+}
+
+.jcarousel-skin-tango .jcarousel-clip {
+    overflow: hidden;
+}
+
+.jcarousel-skin-tango .jcarousel-clip-horizontal {
+    width:  700px;
+    height: 450px;
+}
+
+.jcarousel-skin-tango .jcarousel-item {
+    width: 700px;
+    height: 750px;
+}
+
+.jcarousel-skin-tango .jcarousel-item-horizontal {
+	margin-left: 0;
+    margin-right: 10px;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left: 10px;
+    margin-right: 0;
+}
+
+.jcarousel-skin-tango .jcarousel-item-placeholder {
+    background: #fff;
+    color: #000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-tango .jcarousel-next-horizontal {
+    position: absolute;
+    top: 43px;
+    right: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-next-horizontal {
+    left: 5px;
+    right: auto;
+    background-image: url(prev-horizontal.png);
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-horizontal:focus {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+    position: absolute;
+    top: 43px;
+    left: 5px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: transparent url(prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-tango .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+    left: auto;
+    right: 5px;
+    background-image: url(next-horizontal.png);
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-tango .jcarousel-prev-horizontal:focus {
+    background-position: -32px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-horizontal:active {
+    background-position: -64px 0;
+}
+
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal:active {
+    cursor: default;
+    background-position: -96px 0;
+}
+/**
+* Carousel styles end
+*/
+
+/* Validation error styles */
+.hide
+{
+	display:none;
+}
+textarea.error, input.error, div.error
+{
+	border:1px dotted red;
+}
+label.error
+{
+	color:red;
+	margin-left:10px;
+}
+/* end of validation styles */
+
+#uploading_animation
+{
+	text-align:center;
+	display:none;
+}
+
+#map_error
+{
+	color:red;
+}
