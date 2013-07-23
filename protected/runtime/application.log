@@ -10261,3 +10261,278 @@ Stack trace:
 #28 {main}
 REQUEST_URI=/
 ---
+2013/07/22 18:47:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:47:52 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:50:40 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:50:40 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:50:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:50:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:51:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:51:06 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:51:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:51:55 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:53:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:53:25 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:53:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:53:27 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:54:47 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:54:47 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:54:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:54:49 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 18:55:07 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 18:55:07 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---
+2013/07/22 19:00:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected. The SQL statement executed was: SHOW COLUMNS FROM `accommodation`.
+in C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php (111)
+in C:\xampp\htdocs\accommo\index.php (14)
+2013/07/22 19:00:11 [error] [exception.CDbException] exception 'CDbException' with message 'The table "accommodation" for active record class "Accommodation" cannot be found in the database.' in C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(Accommodation))
+#1 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('Accommodation')
+#2 C:\xampp\htdocs\accommo\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 C:\xampp\htdocs\accommo\protected\controllers\DashboardController.php(111): CActiveRecord->__construct()
+#4 C:\xampp\htdocs\accommo\yii\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#5 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 C:\xampp\htdocs\accommo\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 C:\xampp\htdocs\accommo\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\accommo\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 C:\xampp\htdocs\accommo\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#15 C:\xampp\htdocs\accommo\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\accommo\index.php(14): CApplication->run()
+#17 {main}
+REQUEST_URI=/accommo/
+---

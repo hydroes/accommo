@@ -19,7 +19,7 @@ return array(
 	'name'=>'Accommodation Today',
 
     // set the default controller
-    // 'defaultController' => 'Dashboard',
+     'defaultController' => 'Dashboard',
 
 	// preloading 'log' component
 	'preload' => array('log'),
@@ -76,7 +76,7 @@ return array(
 			'connectionString' => 'mysql:host=localhost;dbname=accommo_today',
 			'emulatePrepare' => true,
 			'username' => 'root', // accommo_admin
-			'password' => 'rjfrank', // sh@Z@@M55
+			'password' => '', // sh@Z@@M55
 			'charset' => 'utf8',
 		),
 

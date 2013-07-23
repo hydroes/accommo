@@ -486,7 +486,7 @@ Accommodation.Op =
 					success: function(response)
 					{
 						// scroll to next step
-						$('#accommodation_wizard_carousel').data('jcarousel').next();
+						$('#accommodation_wizard_carousel').carousel('next');
 						$("#accommodation_details").fadeTo('slow', 1);
 
 						if ( response.accommodation_id )
@@ -563,7 +563,7 @@ Accommodation.Op =
 					success: function(response)
 					{
 						// scroll to next step
-						$('#accommodation_wizard_carousel').data('jcarousel').next();
+						$('#accommodation_wizard_carousel').carousel('next');
 						$("#accommodation_location").fadeTo('slow', 1);
 					}
 				});
@@ -597,7 +597,7 @@ Accommodation.Op =
 			success: function(response)
 			{
 				// scroll to next step
-				$('#accommodation_wizard_carousel').data('jcarousel').next();
+				$('#accommodation_wizard_carousel').carousel('next');
 				$("#accommodation_features").fadeTo('slow', 1);
 			}
 		});
@@ -612,9 +612,9 @@ Accommodation.Op =
 			return;
 		}
 		
-		$('#accommodation_wizard_carousel').data('jcarousel').next();
+		$('#accommodation_wizard_carousel').carousel('next');
 		
-		if ( $('#add_edit_op').val() == 'add' )
+		if ( $('#add_edit_op').val() === 'add' )
 		{
 			Accommodation.Get.accommodationOverview();
 		}
@@ -702,17 +702,6 @@ Accommodation.UI =
 			Accommodation.UI.tabPanes.push($tab_panel);
 			
 		}
-	},
-	
-	preventTabBtnScrollingCarousel: function(event)
-	{
-		console.log('tab event')
-		var $input = $(event.target);
-		var $form = $input.closest('form');
-		if ( $form.find($input[0].nodeName + ':last:visible').attr('id') == $input.attr('id') && event.keyCode == 9 )
-		{
-			event.preventDefault();
-		} 
 	}
 	
 };
@@ -745,22 +734,26 @@ Accommodation.Delegate =
 		$('#accommodation_save_images').live('click', $.proxy(Accommodation.Op.saveImages, this));
 		
 		// bind previous btn
-		$('.prev').live('click', function()
+		$('.previous-wizard').live('click', function()
 		{
 			// Dont allow user to navigate away if an upload is in progress
 			if ( Accommodation.Uploader.state === plupload.UPLOADING )
 			{
 				return;
 			}
-			$('#accommodation_wizard_carousel').data('jcarousel').prev();
+			$('#accommodation_wizard_carousel').carousel('prev');
 		});
 
 		// bind image delete buttons
 		$('.delete_image_btn').live('click', $.proxy(Accommodation.Op.deleteImage, this));
 		
-		// dont let the tab btn scroll the carousel
-		// TODO: this needs some work
-		// $('#tabs').filter(':input').live('keydown', $.proxy(Accommodation.UI.preventTabBtnScrollingCarousel, this));
+		// ignore return key on certian input elements
+		$('.ignore-enter').live('keydown', function(e){
+			var charCode = e.charCode || e.keyCode;
+			if (charCode  == 13) { //Enter key's keycode
+				return false;
+			}
+		});
 		
 	}
 };

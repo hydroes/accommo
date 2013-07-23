@@ -62,8 +62,6 @@ class DashboardController extends BaseController
     	$this->js['/js/vendors/plupload/js/plupload.html4.js'] = '/js/all.js';
     	$this->js['/js/vendors/plupload/js/plupload.html5.js'] = '/js/all.js';
     	$this->js['/js/vendors/plupload/js/jquery.plupload.queue/jquery.plupload.queue.js'] = '/js/all.js';
-    	/* SCROLLER RESOURCES */
-    	$this->js['/js/vendors/jcarousel/lib/jquery.jcarousel.min.js'] = '/js/all.js';
     	/* VALIDATOR RESOURCES */
     	$this->js['/js/vendors/jquery-validation-1.8.1/jquery.validate.js'] = '/js/all.js';
     	/* JSON RESOURCES */
