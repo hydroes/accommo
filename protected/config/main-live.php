@@ -7,6 +7,15 @@ define(
 	. preg_replace('/\/[^\/]+\.php.*/', '', $_SERVER['SCRIPT_NAME'])
 );
 
+// get DB deets from services var
+$services_json = json_decode(getenv("VCAP_SERVICES"),true);
+$mysql_config = $services_json["mysql-5.1"][0]["credentials"];
+//$username = $mysql_config["username"];
+//$password = $mysql_config["password"];
+//$hostname = $mysql_config["hostname"];
+//$port = $mysql_config["port"];
+//$db = $mysql_config["name"];
+
 define('DATE', time());
 
 // uncomment the following to define a path alias
@@ -19,7 +28,7 @@ return array(
 	'name'=>'Accommodation Today',
 
     // set the default controller
-    // 'defaultController' => 'Dashboard',
+     'defaultController' => 'Dashboard',
 
 	// preloading 'log' component
 	'preload' => array('log'),
@@ -34,12 +43,12 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 
-		'gii'=>array(
-			'class'=>'system.gii.GiiModule',
-			'password'=>'pass',
-		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
-			'ipFilters'=>array('127.0.0.1','::1'),
-		),
+//		'gii'=>array(
+//			'class'=>'system.gii.GiiModule',
+//			'password'=>'pass',
+//		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
+//			'ipFilters'=>array('127.0.0.1','::1'),
+//		),
 
 	),
 
@@ -73,10 +82,10 @@ return array(
 
 		'db'=>array(
 		    'class' => 'CDbConnection',
-			'connectionString' => 'mysql:host=localhost;dbname=accommo_today',
+			'connectionString' => 'mysql:host='.$mysql_config["hostname"].';dbname='.$mysql_config["name"],
 			'emulatePrepare' => true,
-			'username' => 'root', // accommo_admin
-			'password' => 'rjfrank', // sh@Z@@M55
+			'username' => $mysql_config["username"], // accommo_admin
+			'password' => $mysql_config["password"], // sh@Z@@M55
 			'charset' => 'utf8',
 		),
 
@@ -94,20 +103,20 @@ return array(
             'params'=>array('directory'=>'/opt/local/bin'),
         ),
         
- 		// 'log'=>array(
- 			// 'class'=>'CLogRouter',
- 			// 'routes'=>array(
- 				// array(
- 					// 'class'=>'CFileLogRoute',
- 					// 'levels'=>'error, warning',
- 				// ),
- 				// // uncomment the following to show log messages on web pages
- 				// array(
- 					// 'class'=>'CWebLogRoute',
- 				// ),
-// 
- 			// ),
- 		// ),
+ 		'log'=>array(
+ 			'class'=>'CLogRouter',
+ 			'routes'=>array(
+ 				array(
+ 					'class'=>'CFileLogRoute',
+ 					'levels'=>'error, warning',
+ 				),
+ 				// uncomment the following to show log messages on web pages
+ 				array(
+ 					'class'=>'CWebLogRoute',
+ 				),
+
+ 			),
+ 		),
 	),
 	
 	'controllerMap'=>array
@@ -126,3 +135,5 @@ return array(
 	),
 
 );
+
+unset($mysql_config);
